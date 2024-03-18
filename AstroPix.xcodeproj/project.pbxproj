@@ -16,6 +16,9 @@
 		D75368682BA5BBB30020A95B /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75368672BA5BBB30020A95B /* Apod.swift */; };
 		D753686C2BA6FED30020A95B /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753686B2BA6FED30020A95B /* Date+Extension.swift */; };
 		D75368732BA7111A0020A95B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75368722BA7111A0020A95B /* ViewModel.swift */; };
+		D777785B2BA83E350004FBEF /* Simulator Screen Recording - iPhone 15 Pro - 2024-03-18 at 10.10.56.gif in Resources */ = {isa = PBXBuildFile; fileRef = D77778582BA83E350004FBEF /* Simulator Screen Recording - iPhone 15 Pro - 2024-03-18 at 10.10.56.gif */; };
+		D777785C2BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.19.png in Resources */ = {isa = PBXBuildFile; fileRef = D77778592BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.19.png */; };
+		D777785D2BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.44.png in Resources */ = {isa = PBXBuildFile; fileRef = D777785A2BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.44.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		D75368672BA5BBB30020A95B /* Apod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
 		D753686B2BA6FED30020A95B /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		D75368722BA7111A0020A95B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D77778562BA838800004FBEF /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		D77778582BA83E350004FBEF /* Simulator Screen Recording - iPhone 15 Pro - 2024-03-18 at 10.10.56.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Simulator Screen Recording - iPhone 15 Pro - 2024-03-18 at 10.10.56.gif"; path = "readme_resources/Simulator Screen Recording - iPhone 15 Pro - 2024-03-18 at 10.10.56.gif"; sourceTree = SOURCE_ROOT; };
+		D77778592BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.19.png"; path = "readme_resources/Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.19.png"; sourceTree = SOURCE_ROOT; };
+		D777785A2BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.44.png"; path = "readme_resources/Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.44.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +85,8 @@
 		D753682D2BA220DE0020A95B = {
 			isa = PBXGroup;
 			children = (
+				D77778562BA838800004FBEF /* ReadMe.md */,
+				D77778572BA83E200004FBEF /* readme_resources */,
 				D75368382BA220DE0020A95B /* AstroPix */,
 				D75368372BA220DE0020A95B /* Products */,
 			);
@@ -155,6 +164,16 @@
 				D75368722BA7111A0020A95B /* ViewModel.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		D77778572BA83E200004FBEF /* readme_resources */ = {
+			isa = PBXGroup;
+			children = (
+				D77778582BA83E350004FBEF /* Simulator Screen Recording - iPhone 15 Pro - 2024-03-18 at 10.10.56.gif */,
+				D77778592BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.19.png */,
+				D777785A2BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.44.png */,
+			);
+			path = readme_resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D777785B2BA83E350004FBEF /* Simulator Screen Recording - iPhone 15 Pro - 2024-03-18 at 10.10.56.gif in Resources */,
 				D75368412BA220E00020A95B /* Preview Assets.xcassets in Resources */,
 				D753683E2BA220E00020A95B /* Assets.xcassets in Resources */,
+				D777785C2BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.19.png in Resources */,
+				D777785D2BA83E350004FBEF /* Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.44.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

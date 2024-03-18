@@ -116,9 +116,11 @@ extension ContentView {
         HStack {
             Button(action: {
                 Task {
-                    viewModel.date = viewModel.date.yesterday()
-                    viewModel.apod = nil
-                    viewModel.image = nil
+                    await MainActor.run {
+                        viewModel.date = viewModel.date.yesterday()
+                        viewModel.apod = nil
+                        viewModel.image = nil
+                    }
                     await viewModel.downloadApod()
                 }
             }, label: {
@@ -134,9 +136,11 @@ extension ContentView {
             if viewModel.isTomorrowValid {
                 Button(action: {
                     Task {
-                        viewModel.date = viewModel.date.tomorrow()
-                        viewModel.apod = nil
-                        viewModel.image = nil
+                        await MainActor.run {
+                            viewModel.date = viewModel.date.tomorrow()
+                            viewModel.apod = nil
+                            viewModel.image = nil
+                        }
                         await viewModel.downloadApod()
                     }
                 }, label: {

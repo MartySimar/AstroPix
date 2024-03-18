@@ -19,11 +19,15 @@ final class ViewModel: ObservableObject {
     func downloadApod() async {
         do {
             try await manager.downloadData(for: date) { [weak self] data in
-                self?.apod = data
+                DispatchQueue.main.async {
+                    self?.apod = data
+                }
             }
             if apod?.mediaType == StringKeys.image.rawValue {
                 try await manager.downloadImage(withURL: apod?.url ?? "") { image in
-                    self.image = image
+                    DispatchQueue.main.async {
+                        self.image = image
+                    }
                 }
             }
         } catch {
