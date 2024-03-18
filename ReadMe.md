@@ -8,5 +8,5 @@ AstroPix allows users to view captivating images of space, along with informativ
 
 ## Showcase
 
-<img src="readme_resources/Simulator Screen Recording - iPhone 15 Pro - 2024-03-18 at 10.10.56.gif" alt="Showcase" height="300"> <img src="readme_resources/Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.19.png" alt="Screenshot 1" height="300"> <img src="readme_resources/Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.44.png" alt="Screenshot 2" height="300"> 
+<img src="readme_resources/Simulator Screen Recording - iPhone 15 Pro - 2024-03-18 at 10.10.56.gif" alt="Showcase" width="150"> <img src="readme_resources/Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.19.png" alt="Screenshot 1" width="150"> <img src="readme_resources/Simulator Screenshot - iPhone 15 Pro - 2024-03-18 at 09.58.44.png" alt="Screenshot 2" width="150"> 
 
