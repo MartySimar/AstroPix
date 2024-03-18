@@ -41,18 +41,18 @@ I have used swift concurrency with URL Session in method, that is async and can 
 ```swift
 func downloadData(for date: Date, completetion: @escaping (_ data: Apod) -> Void) async throws {
 
-let dateString = date.string(format: StringKeys.yyyyMMdd.rawValue)
-guard let url = URL(
-string: "https://api.nasa.gov/planetary/apod?api_key=\(StringKeys.apiKey.rawValue)&date=\(dateString)"
-) else { throw URLError(.badURL) }
+    let dateString = date.string(format: StringKeys.yyyyMMdd.rawValue)
+    guard let url = URL(
+    string: "https://api.nasa.gov/planetary/apod?api_key=\(StringKeys.apiKey.rawValue)&date=\(dateString)"
+    ) else { throw URLError(.badURL) }
 
-let (data, _) = try await URLSession.shared.data(from: url)
+    let (data, _) = try await URLSession.shared.data(from: url)
 
-let decoder = JSONDecoder()
-decoder.keyDecodingStrategy = .convertFromSnakeCase
-let decodedData = try decoder.decode(Apod.self, from: data)
+    let decoder = JSONDecoder()
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
+    let decodedData = try decoder.decode(Apod.self, from: data)
 
-completetion(decodedData)
+    completetion(decodedData)
 }
 ```
 
@@ -60,11 +60,11 @@ completetion(decodedData)
 
 ```swift
 struct Apod: Codable {
-let copyright: String?
-let explanation: String
-let url: String
-let title: String
-let mediaType: String
+    let copyright: String?
+    let explanation: String
+    let url: String
+    let title: String
+    let mediaType: String
 }
 ```
 
@@ -74,9 +74,9 @@ In escaping function I have to use DispatchQueue to publish data into view. I ha
 
 ```swift
 try await manager.downloadData(for: date) { [weak self] data in
-DispatchQueue.main.async {
-self?.apod = data
-}
+    DispatchQueue.main.async {
+        self?.apod = data
+    }
 }
 ```
 
